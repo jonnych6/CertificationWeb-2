@@ -1,0 +1,67 @@
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cta {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* card styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column; /* Stacks flex items vertically */
+    justify-content: center; /* Centers items along the main axis (now vertical) */
+    align-items: center; /* Centers items along the cross axis (now horizontal) */
+}
+
+#carouselExample .carousel-inner .carousel-item img {
+    height: 300px; /* Adjust this value to make the carousel shorter */
+    object-fit: contain; /* This will ensure images cover the area without stretching */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(360deg) brightness(0%) contrast(100%);
+  }
