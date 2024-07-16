@@ -1,24 +1,5 @@
 {% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
 content %}
-<header
-  class="d-flex justify-content-between align-items-center p-3 bg-light border-bottom"
->
-  <div class="logo">
-    <img
-      src="{{ url_for('static', filename='images/logo.png') }}"
-      alt="Team Logo"
-      class="img-fluid w-25"
-    />
-  </div>
-  <nav>
-    <ul class="nav">
-      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
-  <button class="btn btn-primary cta">Get Started</button>
-</header>
 
 <main class="container my-md">
   <section class="intro text-center mb-5">
@@ -67,7 +48,7 @@ content %}
             <p class="card-text">
               Click here to learn all about SOC 1 Certification
             </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="{{ url_for('soc1') }}" class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -136,7 +117,7 @@ content %}
                         transform: translateX(-50%);
                       "
                     >
-                      Click here to learn more about GRC
+                      Click here to learn more about PCI DSS
                     </button>
                   </div>
                 </div>
@@ -147,18 +128,20 @@ content %}
                     alt="..."
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      style="
-                        position: absolute;
-                        bottom: 20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                      "
-                    >
-                      Click here to learn more about GRC
-                    </button>
+                    <a href="{{ url_for('GDPR') }}" style="text-decoration: none;">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        style="
+                          position: absolute;
+                          bottom: 20px;
+                          left: 50%;
+                          transform: translateX(-50%);
+                        "
+                      >
+                      Click here to learn more about GDPR
+                      </button>
+                    </a>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -214,11 +197,4 @@ content %}
     </div>
 </main>
 
-<footer class="bg-light p-3 border-top text-center">
-  <div class="footer-links d-flex justify-content-center">
-    <a href="#" class="mx-2">PC1</a>
-    <a href="#" class="mx-2">PC2</a>
-    <a href="#" class="mx-2">PC3</a>
-  </div>
-</footer>
 {% endblock %}
