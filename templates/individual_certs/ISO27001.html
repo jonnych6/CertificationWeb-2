@@ -1,0 +1,113 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h4>what is</h4>
+  <h1 class="display-1" style="color: #4c65f0">ISO 27001</h1>
+  <p>
+    Everything you need to know about International Organization of
+    Standardization (ISO)'s 27001 certification
+  </p>
+  <img
+    src="\static\images\ISO27001\iso27001-firstimg.png"
+    style="width: 40%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>What is ISO?</h2>
+    <p class="lead">
+      ISO stands for the International Organization of Standardization, although
+      it is not a direct acronym for that name. Because ISO is a multinational
+      organization headquartered in Switzerland that operates in multiple
+      languages, the organization developed its own abbreviation to avoid
+      favoring one over another.
+    </p>
+    <p>
+      ISO 27001 is sometimes referred to as ISO/IEC 27001:2022. The
+      International Organization of Standardization and the International
+      Electrotechnical Commission collaborated to develop this standard, which
+      is known as ISO/IEC. The current version of the standard was published in
+      2022.
+    </p>
+    <div class="alert alert-primary" role="alert" style="margin-top: 40px">
+      <p>
+        <strong
+          >ISO 27001 is widely regarded as the global gold standard for
+          information security and supporting assets. Obtaining ISO 27001
+          certification can help an organization demonstrate its security
+          practices to potential customers all over the world.</strong
+        >
+      </p>
+    </div>
+    <hr />
+    <h2>What is ISO?</h2>
+    <p>
+      The International Organization for Standardization (ISO) and the
+      International Electrotechnical Commission (IEC) collaborated to develop
+      the ISO 27001 standard, which enables businesses to design secure systems
+      and demonstrate their security posture through a certification process.
+      ISO 27001 focuses on a company's information security management system
+      (ISMS), which is a set of policies and procedures that describe how an
+      organization's processes contribute to data security.
+    </p>
+    <p>
+      To obtain ISO 27001 certification, you must go through an audit that
+      confirms you have met the compliance requirements and addressed any
+      potential system risks. The standard consists of ten clauses and 114
+      controls divided into fourteen categories that represent potential
+      security measures that an organization may consider based on its needs and
+      risks. While you must comply with all ten clauses, you do not need to
+      implement all 114 ISO 27001 controls to become certified.
+    </p>
+    <hr />
+    <h2>Who is ISO 27001 for? And why is it important?</h2>
+    <p>
+      The purpose of ISO 27001 certification is to demonstrate to your customers
+      and prospects that security is a top priority for your company. While ISO
+      27001 is not a legal requirement, your customers may require certification
+      before doing business with you. ISO 27001 is applicable to organizations
+      that handle or manage customer data, and it is particularly common among
+      SaaS providers, data storage solutions, data processing and analytics
+      tools, and other data-service platforms.
+    </p>
+    <p>
+      When deciding whether or not to obtain ISO 27001 certification, you should
+      also consider the location of your customers. SOC 2 is a compliance
+      standard similar to ISO 27001 that is primarily used in North America but
+      is gaining traction globally, whereas ISO 27001 is an international
+      standard used all over the world. If you work with clients outside of
+      North America, ISO 27001 is likely to be important to them.
+    </p>
+    <p>
+      Many businesses decide they need both a SOC 2 and an ISO 27001
+      certification if they have customers in North America and other countries
+      around the world. Given that many of the controls overlap, it is common
+      for organizations seeking compliance in both standards to undergo audits
+      concurrently.
+    </p>
+    <p>
+      A completed certificate can show prospects, customers, partners, and other
+      stakeholders that your company has a strong information security posture.
+      While ISO 27001 certification is not legally required, many large
+      organizations insist on it for their vendors. This is done to ensure that
+      the vendors with whom they do business protect their data properly.
+    </p>
+    <hr />
+    <h2 style="text-align: center">
+      Interested in seeing a checklist to achieve ISO 27001?
+    </h2>
+    <div style="display: flex; justify-content: center">
+      <a href="{{ url_for('ISO27001_checklist') }}">
+        <button type="button" class="btn btn-primary btn-lg">
+          Click here to see the checklist
+        </button>
+      </a>
+    </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>
