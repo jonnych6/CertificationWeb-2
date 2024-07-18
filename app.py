@@ -22,5 +22,13 @@ def ISO27001():
 def ISO27001_checklist():
     return render_template('iso27001/ISO27001_checklist.html')
 
+@app.route('/soc1_type1_checklist')
+def soc1_type1_checklist():
+    return render_template('/SOC1/soc1_type1.html')
+
+@app.route('/soc1_type2_checklist')
+def soc1_type2_checklist():
+    return render_template('/SOC1/soc1_type2.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

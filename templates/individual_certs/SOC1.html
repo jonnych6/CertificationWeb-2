@@ -181,6 +181,53 @@ content %}
             are already in place and your team is familiar with the audit
             process.
           </p>
+          <hr />
+          <h2 style="text-align: center">
+            Want to learn more about SOC1 and other related certifications?
+          </h2>
+          <div style="display: flex; justify-content: center">
+            <div class="card mx-3" style="width: 18rem">
+              <div class="card-header">Other SOC Certifications</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="card-link">SOC2</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link">SOC3</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-3" style="width: 18rem">
+              <div class="card-header">Featured</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">SOC1 vs SOC2</li>
+                <li class="list-group-item">SOC1 vs SOC3</li>
+                <li class="list-group-item">SOC1 vs SOC2 vs SOC3</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <h2 style="text-align: center">
+            Interested in seeing a checklist to achieve SOC 1 compliance?
+          </h2>
+          <div style="display: flex; justify-content: center">
+            <a
+              href="{{ url_for('soc1_type1_checklist') }}"
+              style="margin-right: 10px"
+            >
+              <button type="button" class="btn btn-primary btn-lg">
+                Click here to see the SOC 1 Type 1 checklist
+              </button>
+            </a>
+            <a href="{{ url_for('soc1_type2_checklist') }}">
+              <button type="button" class="btn btn-primary btn-lg">
+                Click here to see the SOC 1 Type 2 checklist
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
