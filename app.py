@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home1.html')
+    return render_template('home.html')
 
 @app.route('/SOC1')
 def soc1():
@@ -28,19 +28,24 @@ def ISO27001_checklist():
 
 @app.route('/soc1_type1_checklist')
 def soc1_type1_checklist():
-    return render_template('/SOC1/soc1_type1.html')
+    return render_template('/SOCx/soc1_type1.html')
 
 @app.route('/soc1_type2_checklist')
 def soc1_type2_checklist():
-    return render_template('/SOC1/soc1_type2.html')
+    return render_template('/SOCx/soc1_type2.html')
 
 @app.route('/soc2_type1_checklist')
 def soc2_type1_checklist():
-    return render_template('/SOC2/soc2_type1.html')
+    return render_template('/SOCx/soc2_type1.html')
 
 @app.route('/soc2_type2_checklist')
 def soc2_type2_checklist():
-    return render_template('/SOC2/soc2_type2.html')
+    return render_template('/SOCx/soc2_type2.html')
+
+## SOC comparison routes
+@app.route('/comp_soc1_soc2')
+def comp_soc1_soc2():
+    return render_template('/SOCx/comp_soc1_soc2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
