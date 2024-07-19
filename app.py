@@ -10,6 +10,10 @@ def home():
 def soc1():
     return render_template('individual_certs/SOC1.html')
 
+@app.route('/SOC2')
+def soc2():
+    return render_template('individual_certs/SOC2.html')
+
 @app.route('/GDPR')
 def GDPR():
     return render_template('individual_certs/GDPR.html')
@@ -29,6 +33,14 @@ def soc1_type1_checklist():
 @app.route('/soc1_type2_checklist')
 def soc1_type2_checklist():
     return render_template('/SOC1/soc1_type2.html')
+
+@app.route('/soc2_type1_checklist')
+def soc2_type1_checklist():
+    return render_template('/SOC2/soc2_type1.html')
+
+@app.route('/soc2_type2_checklist')
+def soc2_type2_checklist():
+    return render_template('/SOC2/soc2_type2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
