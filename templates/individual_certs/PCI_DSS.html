@@ -1,0 +1,199 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h4>what is</h4>
+  <h1 class="display-1" style="color: #4c65f0">PCI-DSS</h1>
+  <p>
+    Everything you need to know about Payment Card Industry Data Security
+    Standard
+  </p>
+  <img
+    src="\static\images\PCI_DSS\PCI_DSS-firstimg.png"
+    style="width: 40%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>What is PCI-DSS?</h2>
+    <p class="lead">
+      The Payment Card Industry Data Security Standard (PCI DSS) was established
+      in 2004 by major credit card companies, including Visa, MasterCard,
+      Discover Financial Services, JCB International, and American Express.
+      Governed by the Payment Card Industry Security Standards Council (PCI
+      SSC), this set of security standards aims to protect credit and debit card
+      transactions from data theft and fraud.
+    </p>
+    <p>
+      Although the PCI SSC does not have legal authority to enforce compliance,
+      adherence to PCI DSS is mandatory for any business that processes credit
+      or debit card transactions. Achieving PCI certification is widely regarded
+      as the best way to protect sensitive data and information, fostering
+      long-lasting and trusting relationships between businesses and their
+      customers.
+    </p>
+    <hr />
+    <h2>What does PCI DSS do?</h2>
+    <p>
+      The PCI-DSS ensures the protection of cardholder data through stringent
+      requirements for encryption, security policies, vulnerability management,
+      and access control. It mandates robust network security measures,
+      including firewalls and up-to-date systems. Organizations must regularly
+      update software and apply security patches, implement access controls with
+      unique IDs and physical security, and restrict access to authorized
+      personnel only. Continuous monitoring and testing of security systems are
+      essential. Additionally, firms must maintain a comprehensive, ongoing
+      information security policy. The PCI-DSS integrates all these components
+      to ensure the effective protection of cardholder data.
+    </p>
+    <hr />
+    <h2>Why do companies need PCI DSS?</h2>
+    <p>
+      The Payment Card Industry Data Security Standard (PCI DSS) is crucial for
+      companies that process payment card transactions. These companies handle a
+      significant amount of sensitive information, which must be securely
+      protected. Compliance with PCI DSS is typically required to do business
+      with card networks, banks, and other financial institutions. Failure to
+      comply with PCI DSS can result in substantial fines.
+    </p>
+    <hr />
+    <h2>What are the PCI compliance levels?</h2>
+    <p>
+      PCI compliance is categorized into four levels based on the annual number
+      of credit or debit card transactions a business processes. The
+      classification level dictates the specific requirements an enterprise must
+      meet to maintain compliance.
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Level</th>
+          <th scope="col">Criteria</th>
+          <th scope="col">Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            Merchants processing over six million real-world credit or debit
+            card transactions annually.
+          </td>
+          <td>
+            Annual internal audit conducted by an authorized PCI auditor.<br />Quarterly
+            PCI scans by an Approved Scanning Vendor (ASV).
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            Merchants processing between one and six million real-world credit
+            or debit card transactions annually.
+          </td>
+          <td>
+            Annual assessment using a Self-Assessment Questionnaire (SAQ).<br />
+            Quarterly PCI scans may be required.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            Merchants processing between 20,000 and one million e-commerce
+            transactions annually.
+          </td>
+          <td>
+            Annual assessment using the relevant SAQ.<br />
+            Quarterly PCI scans may be required.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            Merchants processing fewer than 20,000 e-commerce transactions
+            annually or up to one million real-world transactions.
+          </td>
+          <td>
+            Annual assessment using the relevant SAQ.<br />
+            Quarterly PCI scans may be required.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="text-align: center">
+      <img src="static/images/PCI_DSS/pci_dss_levels.png" />
+    </div>
+    <hr />
+    <h2>What are the 12 PCI DSS requirements?</h2>
+    <p>
+      The PCI SSC has established 12 requirements for handling cardholder data
+      and maintaining a secure network, organized under
+      <strong>six key goals</strong>. Compliance with all these requirements is
+      essential for enterprises to achieve PCI DSS certification.
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Requirement</th>
+          <th scope="col">Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Secure Network</td>
+          <td>
+            Install and maintain a firewall configuration.<br />Use original
+            system passwords (not vendor-supplied).
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Protect Cardholder Data</td>
+          <td>
+            Ensure stored cardholder data is protected.<br />
+            Encrypt cardholder data transmitted across public networks.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Vulnerability Management</td>
+          <td>
+            Use and regularly update anti-virus software.<br />
+            Develop and maintain secure systems and applications.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Access Control</td>
+          <td>
+            Restrict access to cardholder data based on business needs.<br />
+            Assign a unique ID to every individual with computer access.<br />
+            Limit physical access to cardholder data.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Network Monitoring and Testing</td>
+          <td>
+            Track and monitor access to cardholder data and network
+            resources.<br />
+            Regularly test security systems and processes.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Information Security</td>
+          <td>Maintain a comprehensive information security policy.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="text-align: center">
+      <img src="static\images\PCI_DSS\pci_dss_requirements.png" />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

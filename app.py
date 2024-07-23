@@ -18,6 +18,10 @@ def soc2():
 def GDPR():
     return render_template('individual_certs/GDPR.html')
 
+@app.route('/PCI')
+def PCI():
+    return render_template('individual_certs/PCI_DSS.html')
+
 @app.route('/ISO27001')
 def ISO27001():
     return render_template('individual_certs/ISO27001.html')
