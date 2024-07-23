@@ -1,0 +1,190 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h1>Checklist Summary</h1>
+  <h1 class="display-1" style="color: #4c65f0">PCI DSS</h1>
+  <img
+    src="static\images\PCI_DSS\PCI_DSS_checklist.png"
+    style="width: 60%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>How to reach PCI compliance</h2>
+    <p class="lead">
+      For many organizations, achieving PCI DSS compliance is a critical
+      milestone for enhancing their security posture and gaining trust in the
+      payments industry. To comply with PCI DSS, you must implement a robust
+      security framework tailored to protect cardholder data. We've developed a
+      detailed checklist to assist you in navigating the PCI DSS implementation
+      and certification process. This checklist encompasses the following steps:
+    </p>
+    <div class="d-flex justify-content-center">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Step</th>
+            <th scope="col">Description</th>
+            <th scope="col">Additional Steps & Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Scope and Identify: Identify All Cardholder Data Flows</td>
+            <td>
+              - Document all locations where cardholder data is stored,
+              processed, or transmitted.<br />- Define scope of the Cardholder
+              Data Environment (CDE), including all systems, networks, and
+              physical locations.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Build and Maintain a Secure Network and Systems</td>
+            <td>
+              - Develop a network diagram illustrating all connections to
+              cardholder data.<br />- Use firewalls and log configurations to
+              safeguard data.<br />- Authorize only necessary inbound and
+              outbound traffic.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Do Not Use Vendor-Supplied Defaults</td>
+            <td>
+              - Change default passwords and settings before system
+              installation.<br />- Develop configuration standards for all
+              system components.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Protect Cardholder Data</td>
+            <td>
+              - Store cardholder data only as needed and securely delete when no
+              longer required.<br />- Mask the Primary Account Number (PAN) to
+              limit visibility.<br />- Use strong cryptography for data
+              protection.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>
+              Encrypt Transmission of Cardholder Data Across Open, Public
+              Networks
+            </td>
+            <td>
+              - Employ strong cryptographic technologies for data
+              transmission.<br />- Ensure strong encryption is used in wireless
+              environments transmitting cardholder data.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Maintain a Vulnerability Management Program</td>
+            <td>
+              - Deploy and regularly update anti-virus software on all
+              vulnerable systems.<br />- Verify that anti-virus programs are
+              working and logging correctly.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Develop and Maintain Secure Systems and Applications</td>
+            <td>
+              - Apply security patches within one month for all components and
+              software.<br />- Implement a mechanism to identify and rank newly
+              discovered vulnerabilities.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Restrict Access to Cardholder Data</td>
+            <td>
+              - Limit access to cardholder data to authorized personnel and
+              programs only.<br />- Assign unique IDs to individuals with
+              computer access.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Identify and Authenticate Access to Systems</td>
+            <td>- Restrict physical access to cardholder data.</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>
+              Track and Monitor Access to Network Resources and Cardholder Data
+            </td>
+            <td>
+              - Implement logging mechanisms to track access.<br />- Regularly
+              test security systems and processes.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Develop and Maintain a Comprehensive Policy</td>
+            <td>
+              - Create and maintain an information security policy addressing
+              all PCI DSS requirements.<br />- Review the policy annually and
+              distribute it to relevant personnel.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Additional Steps for Ongoing Compliance</h2>
+    <div class="d-flex justify-content-center">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Step</th>
+            <th scope="col">Description</th>
+            <th scope="col">Additional Steps & Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Conduct Regular Training</td>
+            <td>
+              Ensure all employees are trained on PCI DSS requirements and
+              security best practices.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Perform Regular Risk Assessments</td>
+            <td>
+              Identify and mitigate risks to cardholder data consistently
+              through regular risk assessments.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Engage Qualified Security Assessors</td>
+            <td>
+              Conduct annual assessments with qualified security assessors to
+              validate compliance status.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Complete Relevant SAQ or ROC</td>
+            <td>
+              Depending on transaction processing volume, complete the
+              appropriate Self-Assessment Questionnaire (SAQ) or Report of
+              Compliance (ROC).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

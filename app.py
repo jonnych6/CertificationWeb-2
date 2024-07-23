@@ -6,6 +6,8 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+
+### home page per certification
 @app.route('/SOC1')
 def soc1():
     return render_template('individual_certs/SOC1.html')
@@ -26,6 +28,14 @@ def PCI():
 def ISO27001():
     return render_template('individual_certs/ISO27001.html')
 
+### end off home page per certification
+
+###checklist routes per certification   
+
+@app.route('/PCI_DSS_checklist')
+def PCI_DSS_checklist():
+    return render_template('/PCI_DSS/PCI_DSS_checklist.html')
+
 @app.route('/ISO27001_checklist')
 def ISO27001_checklist():
     return render_template('iso27001/ISO27001_checklist.html')
@@ -45,6 +55,9 @@ def soc2_type1_checklist():
 @app.route('/soc2_type2_checklist')
 def soc2_type2_checklist():
     return render_template('/SOCx/soc2_type2.html')
+
+### end of checklist routes per certification
+
 
 ## SOC comparison routes
 @app.route('/comp_soc1_soc2')
