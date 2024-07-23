@@ -67,3 +67,9 @@ body {
   .carousel-control-next-icon {
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(360deg) brightness(0%) contrast(100%);
   }
+
+
+.comp_style_header {
+    text-align: center;
+    font-size: 24px;
+  }
