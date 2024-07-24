@@ -6,8 +6,8 @@ content %}
   <h1 class="display-1" style="color: #4c65f0">SOC2</h1>
   <p>Everything you need to know about System and Organization Controls 2</p>
   <img
-    src="\static\images\SOC1\soc1-firstimg.svg"
-    style="width: 40%; height: auto"
+    src="static\images\SOC2\soc2_firstimg.png"
+    style="width: 70%; height: auto"
   />
   <hr />
 </div>
@@ -16,6 +16,9 @@ content %}
   <div class="row align-items-start">
     <div class="col">
       <h2>What is SOC2 reporting?</h2>
+      <div style="text-align: center">
+        <img src="static\images\SOC2\what_is.png" style="width: 25%" />
+      </div>
       <p class="lead">
         SOC 2 (System and Organization Controls 2) reports are a set of criteria
         developed by the American Institute of CPAs (AICPA) to measure how well
@@ -56,7 +59,7 @@ content %}
         </li>
       </ul>
       <img
-        src="\static\images\SOC1\soc-audit-type-1-vs-type-2.png"
+        src="static\images\SOC2\soc2_type1_type2.jpg"
         style="
           display: block;
           margin-left: auto;
@@ -137,7 +140,7 @@ content %}
           </div>
           <div class="col-md-6">
             <img
-              src="/static/images/SOC1/soc1-cost.png"
+              src="static\images\SOC2\cost_soc2.png"
               style="
                 display: block;
                 margin-left: auto;
@@ -175,7 +178,7 @@ content %}
               <div class="card-header">Other SOC Certifications</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <a href="#" class="card-link">SOC2</a>
+                  <a href="{{ url_for('soc1') }}" class="card-link">SOC1</a>
                 </li>
                 <li class="list-group-item">
                   <a href="#" class="card-link">SOC3</a>
