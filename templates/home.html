@@ -14,10 +14,15 @@ content %}
   <div class="container-fluid">
     <div class="row">
       <div class="col-6 centered-content">
-        <div style="text-align: center;">
+        <div style="text-align: center">
           <h1>Why are certifications important?</h1>
           <p>
-            Certifications are important because they demonstrate an organization's compliance to industry standards and best practices, which increases credibility and trust with clients and stakeholders. They contribute to meeting regulatory and compliance requirements, improving risk management, and generating new business opportunities. 
+            Certifications are important because they demonstrate an
+            organization's compliance to industry standards and best practices,
+            which increases credibility and trust with clients and stakeholders.
+            They contribute to meeting regulatory and compliance requirements,
+            improving risk management, and generating new business
+            opportunities.
           </p>
         </div>
       </div>
@@ -47,7 +52,9 @@ content %}
             <p class="card-text">
               Click here to learn all about SOC 1 Certification
             </p>
-            <a href="{{ url_for('soc1') }}" class="btn btn-primary">Read More</a>
+            <a href="{{ url_for('soc1') }}" class="btn btn-primary"
+              >Read More</a
+            >
           </div>
         </div>
       </div>
@@ -64,7 +71,9 @@ content %}
             <p class="card-text">
               Click here to learn all about SOC 2 Certification
             </p>
-            <a href="{{ url_for('soc2') }}" class="btn btn-primary">Read More</a>
+            <a href="{{ url_for('soc2') }}" class="btn btn-primary"
+              >Read More</a
+            >
           </div>
         </div>
       </div>
@@ -81,7 +90,9 @@ content %}
             <p class="card-text">
               Click here learn all about ISO 27001 Certification
             </p>
-            <a href="{{ url_for('ISO27001') }}" class="btn btn-primary">Read More</a>
+            <a href="{{ url_for('ISO27001') }}" class="btn btn-primary"
+              >Read More</a
+            >
           </div>
         </div>
       </div>
@@ -89,113 +100,133 @@ content %}
 
     <div class="container">
       <div>
-        <h2 class="d-flex justify-content-center">Browse our other certifications</h2>
+        <h2 class="d-flex justify-content-center">
+          Browse our other certifications
+        </h2>
       </div>
-          <div class="carousel-section col-lg-12">
-            <!-- Adjust the grid sizing as needed -->
-            <div
-              id="carouselExample"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="static/images/cert_logo/PCI_DSS_transparent.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <a href="{{ url_for('PCI') }}" style="text-decoration: none;">
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        style="
-                          position: absolute;
-                          bottom: 20px;
-                          left: 50%;
-                          transform: translateX(-50%);
-                        "
-                      >
-                        Click here to learn more about PCI-DSS
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="static/images/cert_logo/GDPR_transparent.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <a href="{{ url_for('GDPR') }}" style="text-decoration: none;">
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        style="
-                          position: absolute;
-                          bottom: 20px;
-                          left: 50%;
-                          transform: translateX(-50%);
-                        "
-                      >
-                      Click here to learn more about GDPR
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="static/images/cert_logo/GDPR_transparent.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      style="
-                        position: absolute;
-                        bottom: 20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                      "
-                    >
-                      Click here to learn more about GRC
-                    </button>
-                  </div>
-                </div>
+      <div class="carousel-section col-lg-12">
+        <!-- Adjust the grid sizing as needed -->
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="static/images/cert_logo/PCI_DSS_transparent.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <a href="{{ url_for('PCI') }}" style="text-decoration: none">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="
+                      position: absolute;
+                      bottom: 20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  >
+                    Click here to learn more about PCI-DSS
+                  </button>
+                </a>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="static/images/cert_logo/GDPR_transparent.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <a href="{{ url_for('GDPR') }}" style="text-decoration: none">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="
+                      position: absolute;
+                      bottom: 20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  >
+                    Click here to learn more about GDPR
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="static\images\cert_logo\GRC.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <a href="{{ url_for('GDPR') }}" style="text-decoration: none">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="
+                      position: absolute;
+                      bottom: 20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  >
+                    Click here to learn more about GRC
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="static\images\cert_logo\SOC3_transparent.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <a href="{{ url_for('GDPR') }}" style="text-decoration: none">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="
+                      position: absolute;
+                      bottom: 20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  >
+                    Click here to learn more about SOC 3
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 </main>
 
 {% endblock %}
