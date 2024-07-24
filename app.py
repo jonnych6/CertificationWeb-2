@@ -50,11 +50,11 @@ def soc1_type2_checklist():
 
 @app.route('/soc2_type1_checklist')
 def soc2_type1_checklist():
-    return render_template('/SOCx/soc2_type1.html')
+    return render_template('/SOCx/soc2_type1_checklist.html')
 
 @app.route('/soc2_type2_checklist')
 def soc2_type2_checklist():
-    return render_template('/SOCx/soc2_type2.html')
+    return render_template('/SOCx/soc2_type2_checklist.html')
 
 ### end of checklist routes per certification
 
