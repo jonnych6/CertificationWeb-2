@@ -6,7 +6,7 @@ content %}
   <h1 class="display-1" style="color: #4c65f0">SOC3</h1>
   <p>Everything you need to know about System and Organization Controls 3</p>
   <img
-    src="static\images\SOC2\soc2_firstimg.png"
+    src="static\images\SOC3\soc3_firstimg.png"
     style="width: 70%; height: auto"
   />
   <hr />
@@ -17,7 +17,7 @@ content %}
     <div class="col">
       <h2>What is SOC3?</h2>
       <div style="text-align: center">
-        <img src="static\images\SOC2\what_is.png" style="width: 25%" />
+        <img src="static\images\SOC3\soc3_compliance.png" style="width: 50%" />
       </div>
       <p class="lead">
         SOC 3 (System and Organization Controls 3) reports are a set of criteria
@@ -170,7 +170,7 @@ content %}
           </div>
           <div class="col-md-6">
             <img
-              src="static\images\SOC2\cost_soc2.png"
+              src="static\images\SOC3\so3_cost.png"
               style="
                 display: block;
                 margin-left: auto;
@@ -181,7 +181,7 @@ content %}
             />
           </div>
           <hr />
-          <h2>Are SOC 2 reports mandatory?</h2>
+          <h2>Are SOC 3 reports mandatory?</h2>
           <p>
             SOC 3 reports are not legally required, but they are beneficial for
             demonstrating an organization’s commitment to data security and
@@ -189,7 +189,7 @@ content %}
             part of their vendor risk management process.
           </p>
           <hr />
-          <h2>How long is a SOC 2 report valid?</h2>
+          <h2>How long is a SOC 3 report valid?</h2>
           <p>
             SOC 3 reports are typically valid for
             <strong>12 months</strong> from the date of issuance. Organizations
@@ -210,7 +210,7 @@ content %}
                   <a href="{{ url_for('soc1') }}" class="card-link">SOC1</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#" class="card-link">SOC3</a>
+                  <a href="{{ url_for('soc2') }}" class="card-link">SOC2</a>
                 </li>
                 <li class="list-group-item">
                   <a href="#" class="card-link">Test</a>
@@ -230,21 +230,13 @@ content %}
           <h2 style="text-align: center">
             Interested in seeing a checklist to achieve SOC 3 compliance?
           </h2>
-          <h3 style="text-align: center; color: rgb(77, 77, 77)">
-            Click below!
-          </h3>
           <div style="display: flex; justify-content: center">
             <a
               href="{{ url_for('soc2_type1_checklist') }}"
               style="margin-right: 10px"
             >
               <button type="button" class="btn btn-primary btn-lg">
-                SOC 2 Type 1 Checklist
-              </button>
-            </a>
-            <a href="{{ url_for('soc2_type2_checklist') }}">
-              <button type="button" class="btn btn-primary btn-lg">
-                SOC 2 Type 2 Checklist
+                Checklist
               </button>
             </a>
           </div>
