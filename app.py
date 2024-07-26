@@ -22,7 +22,7 @@ def soc3():
 
 @app.route('/GDPR')
 def GDPR():
-    return render_template('individual_certs/SOC3.html')
+    return render_template('individual_certs/GDPR.html')
 
 @app.route('/PCI')
 def PCI():
@@ -31,6 +31,10 @@ def PCI():
 @app.route('/ISO27001')
 def ISO27001():
     return render_template('individual_certs/ISO27001.html')
+
+@app.route('/GRC')
+def GRC():
+    return render_template('individual_certs/GRC.html')
 
 ### end off home page per certification
 
