@@ -16,9 +16,13 @@ def soc1():
 def soc2():
     return render_template('individual_certs/SOC2.html')
 
+@app.route('/SOC3')
+def soc3():
+    return render_template('individual_certs/SOC3.html')
+
 @app.route('/GDPR')
 def GDPR():
-    return render_template('individual_certs/GDPR.html')
+    return render_template('individual_certs/SOC3.html')
 
 @app.route('/PCI')
 def PCI():
