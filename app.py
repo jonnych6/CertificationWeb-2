@@ -6,6 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/toc')
+def toc():
+    return render_template('toc.html')
 
 ### home page per certification
 @app.route('/SOC1')

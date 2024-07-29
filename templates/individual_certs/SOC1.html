@@ -193,18 +193,18 @@ content %}
                   <a href="{{ url_for('soc2') }}" class="card-link">SOC2</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#" class="card-link">SOC3</a>
+                  <a href="{{ url_for('soc3') }}" class="card-link">SOC3</a>
                 </li>
-                <li class="list-group-item">
-                  <a href="#" class="card-link">Test</a>
-                </li>
+                <li class="list-group-item"></li>
               </ul>
             </div>
             <div class="card mx-3" style="width: 18rem">
               <div class="card-header">Featured Comparisons</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <a href="comp_soc1_soc2" class="card-link">SOC1 VS SOC2</a>
+                  <a href="{{ url_for('comp_soc1_soc2') }}" class="card-link"
+                    >SOC1 VS SOC2</a
+                  >
                 </li>
                 <li class="list-group-item">SOC1 vs SOC3</li>
                 <li class="list-group-item">SOC1 vs SOC2 vs SOC3</li>

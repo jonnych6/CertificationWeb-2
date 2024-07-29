@@ -1,0 +1,99 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<h1 style="display: flex; justify-content: center">Table of Contents</h1>
+
+<div class="container">
+  <h2>Explore Our Certifications</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Certification</th>
+        <th scope="col" colspan="2">Checklist</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="{{ url_for('GDPR') }}">GDPR</a></td>
+        <td colspan="2">
+          <a href="{{ url_for('GDPR_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              GDPR Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('GRC') }}">GRC</a></td>
+        <td colspan="2">
+          <a href="{{ url_for('GRC_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              GRC Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('ISO27001') }}">ISO27001</a></td>
+        <td colspan="2">
+          <a href="{{ url_for('ISO27001_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              ISO27001 Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('PCI') }}">PCI DSS</a></td>
+        <td colspan="2">
+          <a href="{{ url_for('PCI_DSS_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              PCI DSS Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('soc1') }}">SOC 1</a></td>
+        <td>
+          <a href="{{ url_for('soc1_type1_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 1 TYPE 1 Checklist
+            </button></a
+          >
+          <a href="{{ url_for('soc1_type2_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 1 TYPE 2 Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('soc2') }}">SOC 2</a></td>
+        <td>
+          <a href="{{ url_for('soc2_type1_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 2 TYPE 1 Checklist
+            </button></a
+          >
+          <a href="{{ url_for('soc2_type2_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 2 TYPE 2 Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('soc3') }}">SOC 3</a></td>
+        <td>
+          <a href="{{ url_for('soc3_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 3 Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
