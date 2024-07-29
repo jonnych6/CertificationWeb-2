@@ -44,6 +44,10 @@ def GRC():
 def PCI_DSS_checklist():
     return render_template('/PCI_DSS/PCI_DSS_checklist.html')
 
+@app.route('/GDPR_checklist')
+def GDPR_checklist():
+    return render_template('/GDPR/GDPR_checklist.html')
+
 @app.route('/ISO27001_checklist')
 def ISO27001_checklist():
     return render_template('iso27001/ISO27001_checklist.html')
