@@ -87,5 +87,9 @@ def soc3_checklist():
 def comp_soc1_soc2():
     return render_template('/SOCx/comp_soc1_soc2.html')
 
+@app.route('/comp_soc1_soc3')
+def comp_soc1_soc3():
+    return render_template('/SOCx/comp_soc1_soc3.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
