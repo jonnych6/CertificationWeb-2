@@ -223,7 +223,7 @@ content %}
           </p>
           <hr />
           <h2 style="text-align: center">
-            Want to learn more about SOC1 and other related certifications?
+            Want to learn more about SOC 2 and other related certifications?
           </h2>
           <div
             style="display: flex; justify-content: center; margin-bottom: 30px"
@@ -237,18 +237,19 @@ content %}
                 <li class="list-group-item">
                   <a href="{{ url_for('soc3') }}" class="card-link">SOC3</a>
                 </li>
-                <li class="list-group-item"></li>
               </ul>
             </div>
             <div class="card mx-3" style="width: 18rem">
-              <div class="card-header">Featured</div>
+              <div class="card-header">Compare to other SOCs</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <a href="{{ url_for('comp_soc1_soc2') }}">SOC1 vs SOC2</a>
+                  <a href="{{ url_for('comp_soc1_soc2') }}">SOC 1 vs SOC 2</a>
                 </li>
-
-                <li class="list-group-item">SOC1 vs SOC3</li>
-                <li class="list-group-item">SOC1 vs SOC2 vs SOC3</li>
+                <li class="list-group-item">
+                  <a href="{{ url_for('comp_soc_all') }}"
+                    >SOC 1 vs. SOC 2 vs. SOC 3</a
+                  >
+                </li>
               </ul>
             </div>
           </div>

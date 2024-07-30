@@ -3,10 +3,10 @@ content %}
 
 <div class="container text-center" style="margin-top: 100px">
   <h4>what is</h4>
-  <h1 class="display-1" style="color: #4c65f0">SOC3</h1>
+  <h1 class="display-1" style="color: #4c65f0">SOC 3</h1>
   <p>Everything you need to know about System and Organization Controls 3</p>
   <img
-    src="static\images\SOC3\soc3_firstimg.png"
+    src="static\images\soc3\soc3_firstimg.png"
     style="width: 70%; height: auto"
   />
   <hr />
@@ -15,9 +15,9 @@ content %}
 <div class="container">
   <div class="row align-items-start">
     <div class="col">
-      <h2>What is SOC3?</h2>
+      <h2>What is SOC 3?</h2>
       <div style="text-align: center">
-        <img src="static\images\SOC3\soc3_compliance.png" style="width: 50%" />
+        <img src="static\images\soc3\soc3_compliance.png" style="width: 50%" />
       </div>
       <p class="lead">
         SOC 3 (System and Organization Controls 3) reports are a set of criteria
@@ -170,7 +170,7 @@ content %}
           </div>
           <div class="col-md-6">
             <img
-              src="static\images\SOC3\so3_cost.png"
+              src="static\images\soc3\so3_cost.png"
               style="
                 display: block;
                 margin-left: auto;
@@ -212,19 +212,21 @@ content %}
                 <li class="list-group-item">
                   <a href="{{ url_for('soc2') }}" class="card-link">SOC2</a>
                 </li>
-                <li class="list-group-item"></li>
               </ul>
             </div>
             <div class="card mx-3" style="width: 18rem">
               <div class="card-header">Featured</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <a href="{{ url_for('comp_soc1_soc2') }}" class="card-link"
-                    >SOC1 vs SOC2</a
+                  <a href="{{ url_for('comp_soc1_soc3') }}" class="card-link"
+                    >SOC 1 vs SOC 3</a
                   >
                 </li>
-                <li class="list-group-item">SOC1 vs SOC3</li>
-                <li class="list-group-item">SOC1 vs SOC2 vs SOC3</li>
+                <li class="list-group-item">
+                  <a href="{{ url_for('comp_soc_all') }}" class="card-link"
+                    >SOC 1 vs. SOC 2 vs. SOC 3</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -238,7 +240,7 @@ content %}
               style="margin-right: 10px"
             >
               <button type="button" class="btn btn-primary btn-lg">
-                Checklist
+                Click Here!
               </button>
             </a>
           </div>
