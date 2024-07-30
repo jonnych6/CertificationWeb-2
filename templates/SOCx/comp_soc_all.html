@@ -1,0 +1,170 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h1>Comparing</h1>
+  <h1 class="display-1" style="color: #4c65f0">SOC 1 vs. SOC 2 vs. SOC 3</h1>
+  <img
+    src="static/images/SOCx/comp_soc_all.png"
+    style="width: 60%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>Overview of SOC Reports</h2>
+    <p class="lead">
+      SOC 1, SOC 2, and SOC 3 reports are types of System and Organization
+      Controls (SOC) reports designed to assess and communicate different
+      aspects of service organizations' controls. These reports serve various
+      purposes and audiences, providing insights into how organizations manage
+      and protect data and systems.
+    </p>
+    <div style="display: flex; justify-content: center">
+      <img src="static\images\SOCx\comp_soc_all_1.jpg" style="width: 50%" />
+    </div>
+    <hr />
+    <h2>What’s the difference between SOC 1, SOC 2, and SOC 3?</h2>
+    <p>
+      The main differences among SOC 1, SOC 2, and SOC 3 reports are in their
+      focus and intended audience. Here’s a breakdown:
+    </p>
+    <ul>
+      <li>
+        <strong>SOC 1 Report</strong>: Focuses on internal controls related to
+        financial reporting. It is used by organizations whose services impact
+        their clients' financial statements, ensuring that these controls are
+        designed and operating effectively to support accurate financial
+        reporting.
+      </li>
+      <li>
+        <strong>SOC 2 Report:</strong> Assesses controls related to the Trust
+        Services Criteria: security, availability, processing integrity,
+        confidentiality, and privacy. SOC 2 reports are intended for a more
+        specialized audience, such as clients and business partners, who require
+        detailed assurance on these criteria.
+      </li>
+      <li>
+        <strong>SOC 3 Report:</strong> Provides a summary of the SOC 2 report
+        and is designed for public distribution. It offers a high-level overview
+        of the service organization's controls related to security,
+        availability, and confidentiality, making it suitable for a broader
+        audience.
+      </li>
+    </ul>
+    <div class="alert alert-primary" role="alert">
+      <strong
+        >SOC 1 reports focus on financial reporting controls, SOC 2 reports
+        assess controls based on Trust Services Criteria, and SOC 3 reports
+        offer a public summary of SOC 2 controls.</strong
+      >
+    </div>
+    <div class="d-flex justify-content-center">
+      <table class="table table-striped-columns table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" class="comp_style_header" style="color: purple">
+              SOC 1
+            </th>
+            <th scope="col" class="comp_style_header" style="color: #4c65f0">
+              SOC 2
+            </th>
+            <th scope="col" class="comp_style_header" style="color: #1a73e8">
+              SOC 3
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">What does it audit?</th>
+            <td>Internal controls related to financial reporting</td>
+            <td>
+              Controls related to security, availability, processing integrity,
+              confidentiality, and privacy
+            </td>
+            <td>
+              Summary of controls related to security, availability, and
+              confidentiality
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Who should get this certification?</th>
+            <td>Organizations impacting clients' financial statements</td>
+            <td>
+              Organizations requiring detailed assurance on Trust Services
+              Criteria
+            </td>
+            <td>
+              Organizations seeking to provide high-level control assurances to
+              the public
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">What it reports on?</th>
+            <td>
+              Controls and processes affecting financial statement accuracy
+            </td>
+            <td>
+              Detailed assessment of controls based on Trust Services Criteria
+            </td>
+            <td>
+              High-level summary of controls related to security, availability,
+              and confidentiality
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Who Wants to see the certification?</th>
+            <td>Clients and stakeholders focused on financial reporting</td>
+            <td>
+              Clients and business partners needing detailed control assurances
+            </td>
+            <td>
+              General public and clients seeking broad assurance on data
+              protection and operational controls
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <h2>Which SOC Report is Right for You?</h2>
+    <div style="display: flex; justify-content: center">
+      <img
+        src="https://www.assurancelab.cpa/hubfs/Different%20SOC%20levels.png"
+        style="width: 50%"
+      />
+    </div>
+    <ul>
+      <li>
+        <strong>SOC 1 Report:</strong> Ideal if your services impact your
+        clients' financial operations. It provides assurance on financial
+        reporting controls and is necessary for organizations handling financial
+        transactions or processing payments.
+      </li>
+      <li>
+        <strong>SOC 2 Report:</strong> Best suited if you need to demonstrate
+        detailed controls related to security, availability, processing
+        integrity, confidentiality, and privacy. It is important for
+        organizations with sensitive data or complex systems requiring
+        comprehensive assurance.
+      </li>
+      <li>
+        <strong>SOC 3 Report:</strong> Appropriate for organizations aiming to
+        provide a high-level summary of their controls to a broad audience. It
+        is often used for public assurance and marketing purposes.
+      </li>
+    </ul>
+    <div class="alert alert-primary" role="alert">
+      <strong
+        >Your choice of SOC report should align with your organization’s needs
+        and objectives, as well as the requirements of your clients and
+        stakeholders. Evaluate the specific assurances needed to determine the
+        most suitable SOC report for your organization.</strong
+      >
+    </div>
+  </div>
+</div>
+
+{% endblock %}

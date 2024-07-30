@@ -91,5 +91,9 @@ def comp_soc1_soc2():
 def comp_soc1_soc3():
     return render_template('/SOCx/comp_soc1_soc3.html')
 
+@app.route('/comp_soc_all')
+def comp_soc_all():
+    return render_template('/SOCx/comp_soc_all.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
