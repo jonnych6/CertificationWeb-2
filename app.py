@@ -39,6 +39,10 @@ def ISO27001():
 def GRC():
     return render_template('individual_certs/GRC.html')
 
+@app.route('/HIPAA')
+def HIPAA():
+    return render_template('individual_certs/HIPAA.html')
+
 ### end off home page per certification
 
 ###checklist routes per certification   
