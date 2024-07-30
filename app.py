@@ -55,6 +55,10 @@ def PCI_DSS_checklist():
 def GRC_checklist():
     return render_template('/GRC/GRC_checklist.html')
 
+@app.route('/HIPAA_checklist')
+def HIPAA_checklist():
+    return render_template('/HIPAA/HIPAA_checklist.html')
+
 @app.route('/GDPR_checklist')
 def GDPR_checklist():
     return render_template('/GDPR/GDPR_checklist.html')

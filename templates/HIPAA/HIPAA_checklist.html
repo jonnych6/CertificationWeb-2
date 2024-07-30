@@ -1,0 +1,305 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h1>Checklist Summary</h1>
+  <h1 class="display-1" style="color: #4c65f0">HIPAA</h1>
+  <img
+    src="static\images\HIPPA\hipaa_checklist.png"
+    style="width: 50%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>How to Achieve HIPAA Compliance</h2>
+    <p class="lead">
+      For organizations seeking to achieve comprehensive HIPAA compliance, this
+      checklist provides a detailed guide through the HIPAA implementation and
+      compliance process. It includes steps to help ensure that your
+      organization effectively manages protected health information (PHI),
+      adheres to privacy and security requirements, and fosters a culture of
+      compliance and accountability.
+    </p>
+    <div class="d-flex justify-content-center">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Step</th>
+            <th scope="col">Description</th>
+            <th scope="col">Additional Steps & Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Determine Applicability</td>
+            <td>
+              -
+              <strong
+                >Identify Covered Entities and Business Associates:</strong
+              >
+              Determine if your organization is a covered entity (health plans,
+              healthcare clearinghouses, or healthcare providers) or a business
+              associate.<br />
+              - <strong>Scope of PHI:</strong> Assess the type and amount of
+              Protected Health Information (PHI) your organization handles.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Appoint HIPAA Officers</td>
+            <td>
+              - <strong>Privacy Officer:</strong> Designate a Privacy Officer to
+              oversee HIPAA compliance and privacy practices.<br />
+              - <strong>Security Officer:</strong> Designate a Security Officer
+              responsible for developing and implementing security policies.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Understand PHI</td>
+            <td>
+              - <strong>Define PHI:</strong> Identify what constitutes Protected
+              Health Information (PHI), including electronic, paper, and oral
+              forms.<br />
+              - <strong>Audit PHI:</strong> Regularly audit how PHI is
+              collected, used, stored, and shared. Map data flows to identify
+              all PHI touchpoints.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Conduct Risk Assessments</td>
+            <td>
+              - <strong>Risk Analysis:</strong> Perform a thorough risk analysis
+              to identify potential threats to PHI, including vulnerabilities
+              and likelihood of threat occurrence.<br />
+              - <strong>Risk Management Plan:</strong> Implement measures to
+              mitigate identified risks, including administrative, physical, and
+              technical safeguards.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Implement Administrative Safeguards</td>
+            <td>
+              - <strong>Security Management Process:</strong> Implement policies
+              to prevent, detect, and correct security violations.<br />
+              - <strong>Risk Analysis and Management:</strong> Document risk
+              assessments and management plans.<br />
+              - <strong>Sanction Policy:</strong> Develop policies for
+              sanctioning workforce members who fail to comply with security
+              policies.<br />
+              - <strong>Workforce Security:</strong> Ensure appropriate access
+              to PHI based on roles.<br />
+              - <strong>Authorization and Supervision:</strong> Supervise
+              workforce members who handle PHI.<br />
+              - <strong>Workforce Clearance:</strong> Conduct background checks
+              and clearance procedures.<br />
+              - <strong>Termination Procedures:</strong> Revoke access to PHI
+              upon termination of employment.<br />
+              - <strong>Information Access Management:</strong> Implement
+              policies and procedures for authorizing access to PHI.<br />
+              - <strong>Access Establishment and Modification:</strong> Define
+              and enforce procedures for granting and modifying access to PHI.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Implement Physical Safeguards</td>
+            <td>
+              - <strong>Facility Access Controls:</strong> Implement policies to
+              limit physical access to PHI.<br />
+              - <strong>Contingency Operations:</strong> Establish procedures
+              for accessing facilities in emergency situations.<br />
+              - <strong>Facility Security Plan:</strong> Develop policies to
+              safeguard facilities and equipment.<br />
+              - <strong>Access Control and Validation:</strong> Control and
+              validate access to facilities based on role and function.<br />
+              - <strong>Workstation Use and Security:</strong> Define
+              appropriate use of workstations accessing PHI and implement
+              physical safeguards.<br />
+              - <strong>Device and Media Controls:</strong> Implement policies
+              for handling hardware and electronic media containing PHI.<br />
+              - <strong>Disposal and Re-use:</strong> Ensure secure disposal and
+              re-use of devices and media.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Implement Technical Safeguards</td>
+            <td>
+              - <strong>Access Control:</strong> Implement unique user
+              identifications, emergency access procedures, automatic logoff,
+              and encryption.<br />
+              - <strong>Unique User Identification:</strong> Assign a unique
+              name or number to each user.<br />
+              - <strong>Emergency Access Procedure:</strong> Ensure emergency
+              access to PHI.<br />
+              - <strong>Automatic Logoff:</strong> Implement procedures to log
+              off inactive sessions.<br />
+              - <strong>Encryption and Decryption:</strong> Encrypt PHI during
+              transmission and storage.<br />
+              - <strong>Audit Controls:</strong> Implement hardware, software,
+              and procedural mechanisms to record and examine access to PHI.<br />
+              - <strong>Integrity Controls:</strong> Ensure that PHI is not
+              improperly altered or destroyed.<br />
+              - <strong>Transmission Security:</strong> Protect PHI during
+              electronic transmission.<br />
+              - <strong>Integrity Controls:</strong> Ensure PHI is not altered
+              or destroyed during transmission.<br />
+              - <strong>Encryption:</strong> Encrypt PHI in transit to protect
+              against unauthorized access.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Develop and Implement Policies and Procedures</td>
+            <td>
+              - <strong>Privacy Policies:</strong> Develop and maintain HIPAA
+              privacy policies.<br />
+              - <strong>Use and Disclosure:</strong> Establish guidelines for
+              PHI use and disclosure.<br />
+              - <strong>Patient Rights:</strong> Define procedures for handling
+              patient rights, including access and amendment of PHI.<br />
+              - <strong>Breach Notification Policies:</strong> Establish
+              policies for breach identification and notification.<br />
+              - <strong>Complaint Procedures:</strong> Implement procedures for
+              handling complaints and violations.<br />
+              - <strong>Security Policies:</strong> Create security policies
+              covering all administrative, physical, and technical
+              safeguards.<br />
+              - <strong>Contingency Planning:</strong> Develop plans for data
+              backup, disaster recovery, and emergency mode operations.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Training and Awareness</td>
+            <td>
+              - <strong>Regular Training:</strong> Conduct regular HIPAA
+              training sessions for all employees, including new hires and
+              annual refreshers.<br />
+              - <strong>Role-Based Training:</strong> Tailor training based on
+              job functions and access to PHI.<br />
+              - <strong>Awareness Programs:</strong> Implement programs to
+              maintain HIPAA awareness, including phishing simulations and
+              security reminders.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Business Associate Agreements (BAAs)</td>
+            <td>
+              - <strong>Identify Business Associates:</strong> Determine which
+              vendors and partners are business associates.<br />
+              - <strong>Execute BAAs:</strong> Ensure all business associates
+              sign agreements specifying their HIPAA obligations.<br />
+              - <strong>BAA Terms:</strong> Include terms for PHI protection,
+              breach notification, and termination of agreement.<br />
+              - <strong>Monitor Compliance:</strong> Regularly review and
+              monitor business associate compliance.<br />
+              - <strong>Periodic Audits:</strong> Conduct audits of business
+              associate compliance.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Monitor and Audit Compliance</td>
+            <td>
+              - <strong>Regular Audits:</strong> Conduct regular internal audits
+              to ensure ongoing compliance.<br />
+              - <strong>Audit Trails:</strong> Maintain and review audit trails
+              of PHI access and modifications.<br />
+              - <strong>Compliance Reviews:</strong> Schedule periodic reviews
+              of HIPAA compliance policies and procedures.<br />
+              - <strong>Third-Party Audits:</strong> Engage third-party auditors
+              to validate compliance.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Documentation</td>
+            <td>
+              - <strong>Maintain Records:</strong> Keep detailed records of
+              compliance efforts, including risk assessments, training sessions,
+              policies, and procedures.<br />
+              - <strong>Document Retention:</strong> Retain documentation for a
+              minimum of six years as required by HIPAA.<br />
+              - <strong>Update Documentation:</strong> Regularly update
+              documentation to reflect changes in regulations and practices.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Respond to Breaches</td>
+            <td>
+              - <strong>Incident Response Plan:</strong> Develop and implement
+              an incident response plan for handling breaches.<br />
+              - <strong>Breach Identification:</strong> Establish procedures for
+              identifying and investigating breaches.<br />
+              - <strong>Mitigation:</strong> Implement measures to mitigate
+              damage from breaches.<br />
+              - <strong>Breach Notification:</strong> Notify affected
+              individuals, the Department of Health and Human Services (HHS),
+              and the media (if applicable) within stipulated timeframes.<br />
+              - <strong>Notification Procedures:</strong> Define procedures for
+              timely notification of breaches.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Continuous Improvement</td>
+            <td>
+              - <strong>Feedback Loop:</strong> Establish a feedback loop to
+              identify areas for improvement in compliance efforts.<br />
+              - <strong>Post-Incident Analysis:</strong> Conduct post-incident
+              analyses to identify gaps and implement corrective actions.<br />
+              - <strong>Stay Updated:</strong> Keep up with changes in HIPAA
+              regulations and update practices accordingly.<br />
+              - <strong>Regulatory Monitoring:</strong> Monitor regulatory
+              updates and adjust policies and procedures as needed.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Patient Rights and Access</td>
+            <td>
+              - <strong>Access to PHI:</strong> Ensure patients can access their
+              PHI within the required timeframes.<br />
+              - <strong>Request Procedures:</strong> Establish procedures for
+              handling patient requests for PHI access.<br />
+              - <strong>Amendments to PHI:</strong> Allow patients to request
+              amendments to their PHI.<br />
+              - <strong>Amendment Procedures:</strong> Define procedures for
+              reviewing and responding to amendment requests.<br />
+              - <strong>Accounting of Disclosures:</strong> Maintain records of
+              disclosures and provide accounting upon request.<br />
+              - <strong>Disclosure Logs:</strong> Keep logs of all disclosures
+              of PHI for a minimum of six years.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Physical and Environmental Controls</td>
+            <td>
+              - <strong>Workstation and Device Security:</strong> Secure
+              workstations and devices used to access PHI.<br />
+              - <strong>Physical Locks:</strong> Use physical locks and other
+              security measures to prevent unauthorized access.<br />
+              - <strong>Environmental Safeguards:</strong> Implement
+              environmental controls to protect against natural and
+              environmental hazards.<br />
+              - <strong>Environmental Monitoring:</strong> Monitor and control
+              environmental conditions to safeguard PHI.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
