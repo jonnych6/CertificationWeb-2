@@ -43,6 +43,10 @@ def GRC():
 def HIPAA():
     return render_template('individual_certs/HIPAA.html')
 
+@app.route('/NIST')
+def NIST():
+    return render_template('individual_certs/NIST.html')
+
 ### end off home page per certification
 
 ###checklist routes per certification   

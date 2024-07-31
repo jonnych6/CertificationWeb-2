@@ -1,9 +1,8 @@
 {% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
 content %}
 
-<h1 style="display: flex; justify-content: center">Table of Contents</h1>
-
 <div class="container">
+  <h1 style="display: flex; justify-content: center">Table of Contents</h1>
   <h2>Explore Our Certifications</h2>
   <table class="table">
     <thead>
@@ -54,6 +53,16 @@ content %}
         </td>
       </tr>
       <tr>
+        <td><a href="{{ url_for('HIPAA') }}">HIPAA</a></td>
+        <td>
+          <a href="{{ url_for('HIPAA_checklist') }}"
+            ><button type="button" class="btn btn-primary">
+              HIPAA Checklist
+            </button></a
+          >
+        </td>
+      </tr>
+      <tr>
         <td><a href="{{ url_for('soc1') }}">SOC 1</a></td>
         <td>
           <a href="{{ url_for('soc1_type1_checklist') }}"
@@ -93,7 +102,28 @@ content %}
           >
         </td>
       </tr>
+      <tr>
+        <td>SOC(1,2,3) Comparisons</td>
+        <td>
+          <a href="{{ url_for('comp_soc_all') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 1 vs. SOC 2 vs. SOC 3
+            </button></a
+          >
+          <a href="{{ url_for('comp_soc1_soc2') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 1 vs. SOC 2
+            </button></a
+          >
+          <a href="{{ url_for('comp_soc1_soc3') }}"
+            ><button type="button" class="btn btn-primary">
+              SOC 1 vs. SOC 3
+            </button></a
+          >
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
+
 {% endblock %}
