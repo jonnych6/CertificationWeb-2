@@ -40,7 +40,11 @@
               >Table of Contents</a
             >
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="{{ url_for('about') }}" class="nav-link"
+              >About Us & the Project</a
+            >
+          </li>
         </ul>
       </nav>
       <!-- <button class="btn btn-primary cta">Get Started</button> -->
@@ -51,7 +55,7 @@
       <div class="footer-links d-flex justify-content-center">
         <a href="{{ url_for('home') }}" class="mx-2">Home</a>
         <a href="#" class="mx-2">Table of Contents</a>
-        <a href="#" class="mx-2">About Us</a>
+        <a href="#" class="mx-2">About Us & the Project</a>
       </div>
     </footer>
     <!-- Bootstrap JS -->

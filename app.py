@@ -10,6 +10,10 @@ def home():
 def toc():
     return render_template('toc.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 ### home page per certification
 @app.route('/SOC1')
 def soc1():
