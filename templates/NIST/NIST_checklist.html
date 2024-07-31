@@ -1,0 +1,599 @@
+{% extends "layout.html" %} {% block title %}Resources{% endblock %} {% block
+content %}
+
+<div class="container text-center" style="margin-top: 100px">
+  <h1>Checklist Summaries</h1>
+  <h1 class="display-1" style="color: #4c65f0">NIST</h1>
+  <img
+    src="static\images\NIST\NIST_checklist.png"
+    style="width: 60%; height: auto"
+  />
+  <hr />
+</div>
+
+<div class="container">
+  <div class="col">
+    <h2>How to reach NIST compliance</h2>
+    <p class="lead">
+      For many organizations, achieving NIST compliance is a crucial step toward
+      strengthening their security posture and ensuring robust protection of
+      sensitive information. To comply with NIST guidelines, you must implement
+      a comprehensive security framework tailored to safeguard your data and
+      systems. We've created a detailed checklist to help you navigate the NIST
+      implementation and certification process. This checklist includes the
+      following essential steps:
+    </p>
+    <hr />
+    <div class="d-flex justify-content-center">
+      <div class="container">
+        <div class="col">
+          <h2>NIST 800-171 Compliance Checklist</h2>
+          <div class="d-flex justify-content-center">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Step</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Additional Steps & Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Assess the Scope of the Contract</td>
+                  <td>
+                    - Determine Applicability: Find out if your organization
+                    needs to follow the NIST 800-171 standard.<br />
+                    - Understand Contract Scope: Assess the contract’s scope to
+                    determine which NIST 800-171 requirements apply.<br />
+                    - Adherence to the Defense Federal Acquisition Regulation
+                    Supplement (DFARS).<br />
+                    - Compliance with Cybersecurity Maturity Model Certification
+                    (CMMC) requirements.<br />
+                    - Obtaining and maintaining necessary security clearances
+                    for personnel.<br />
+                    - Ensuring secure handling and storage of classified
+                    information.<br />
+                    - Meeting specified technical and performance standards.<br />
+                    - Delivering products or services within the agreed timeline
+                    and budget.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Identify Whether You’re Dealing with CUI</td>
+                  <td>
+                    - Determine CUI Presence: Identify if you’re dealing with
+                    Controlled Unclassified Information (CUI).<br />
+                    - Conduct an Audit: Perform a complete audit of your
+                    company’s systems and data flows, including third-party
+                    contractors.<br />
+                    - Recognize Keywords: Look for terms like “critical
+                    infrastructure,” “export control,” or “statutory” that
+                    indicate potential CUI.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Classify the Data</td>
+                  <td>
+                    - Categorize CUI: Once identified, categorize CUI according
+                    to its type. Different types of CUI require varying levels
+                    of protection.<br />
+                    - Use NIST Categories: Follow NIST 800-171’s 20 categories
+                    of CUI, which include:
+                    <ul>
+                      <li>Critical Infrastructure</li>
+                      <li>Defense</li>
+                      <li>Export Control</li>
+                      <li>Intelligence</li>
+                      <li>Procurement and Acquisition</li>
+                      <li>Financial</li>
+                      <li>Law Enforcement</li>
+                      <li>Legal</li>
+                      <li>International Agreements</li>
+                      <li>Natural and Cultural Resources</li>
+                      <li>Nuclear</li>
+                      <li>Provisional</li>
+                      <li>Patents</li>
+                      <li>NATO</li>
+                      <li>Privacy</li>
+                      <li>Proprietary Business Information</li>
+                      <li>Statistical</li>
+                      <li>Tax</li>
+                      <li>Transportation</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Gather Appropriate Documentation</td>
+                  <td>
+                    - System and Network Architecture: Create detailed diagrams
+                    and descriptions of your system and network setup.<br />
+                    - System Boundaries: Clearly define where your systems begin
+                    and end, including interfaces with other systems.<br />
+                    - Data Flow: Document how data moves through your systems,
+                    including storage and processing points.<br />
+                    - Personnel Records: Maintain records of staff roles and
+                    responsibilities, including access to CUI and training
+                    records.<br />
+                    - Processes and Procedures: Write down procedures and
+                    policies for handling CUI, security measures, and incident
+                    response plans.<br />
+                    - Anticipated Changes: Document any planned changes to your
+                    systems or processes that could affect compliance.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Conduct a Gap Analysis</td>
+                  <td>
+                    - Pre-Assessment: Conduct a pre-assessment to determine your
+                    readiness for certification.<br />
+                    - Identify Gaps: Perform a gap analysis to identify existing
+                    gaps, starting with primary access control requirements.<br />
+                    - Document Findings: Record any flaws or control gaps to
+                    address them.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Develop and Test Baseline Controls</td>
+                  <td>
+                    - Identify Controls: Select security and privacy controls
+                    that comply with legal requirements, security standards, and
+                    policies.<br />
+                    - Ensure Coverage: Verify that baseline controls cover all
+                    14 control families listed in NIST 800-171.<br />
+                    - Test Controls: Regularly test the selected controls to
+                    ensure they are effective.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Gather the Right Evidence</td>
+                  <td>
+                    - Collect Evidence: Gather the necessary evidence for your
+                    NIST audit, focusing on the 14 NIST 800-171 criteria.<br />
+                    - Document Preservation: Ensure that all evidence, including
+                    compromised systems, is preserved and documented properly
+                    for potential legal proceedings.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Conduct Continuous Monitoring</td>
+                  <td>
+                    - Implement Monitoring: Establish continuous monitoring
+                    processes and technology to detect compliance and risk
+                    issues.<br />
+                    - Regular Testing: Regularly test controls and improve them
+                    when vulnerabilities are identified.<br />
+                    - Update Controls: Adjust controls as necessary to address
+                    any detected issues or changes in the operational
+                    environment.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>NIST CSF</h2>
+          <div class="d-flex justify-content-center">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Step</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Additional Steps & Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Identify - Asset Management</td>
+                  <td>
+                    - Inventory all physical devices and systems.<br />
+                    - Inventory all software platforms and applications.<br />
+                    - Map organizational communication and data flows.<br />
+                    - Identify and document external information systems.<br />
+                    - Define roles and responsibilities for cybersecurity.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Identify - Business Environment</td>
+                  <td>
+                    - Understand and document the organization’s mission,
+                    objectives, and activities.<br />
+                    - Identify organizational dependencies and critical
+                    functions.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Identify - Governance</td>
+                  <td>
+                    - Establish and document cybersecurity policies.<br />
+                    - Define roles, responsibilities, and authority for
+                    cybersecurity decisions.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Identify - Risk Assessment</td>
+                  <td>
+                    - Identify and assess cybersecurity risks to organizational
+                    operations.<br />
+                    - Conduct regular risk assessments and document findings.<br />
+                    - Review and prioritize risks based on their impact.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Identify - Risk Management Strategy</td>
+                  <td>
+                    - Define risk management policies and processes.<br />
+                    - Establish risk tolerance levels and thresholds.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Identify - Supply Chain Risk Management</td>
+                  <td>
+                    - Identify and assess risks from third-party suppliers and
+                    partners.<br />
+                    - Implement measures to mitigate supply chain risks.<br />
+                    - Document supply chain security policies.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Protect - Identity Management and Access Control</td>
+                  <td>
+                    - Implement access control measures.<br />
+                    - Enforce least privilege access principles.<br />
+                    - Use identity and access management (IAM) solutions.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Protect - Awareness and Training</td>
+                  <td>
+                    - Conduct regular security awareness training for all
+                    employees.<br />
+                    - Maintain records of training sessions and materials.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Protect - Data Security</td>
+                  <td>
+                    - Implement data protection measures, including
+                    encryption.<br />
+                    - Ensure secure handling and storage of sensitive data.<br />
+                    - Regularly review and update data protection policies.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>
+                    Protect - Information Protection Processes and Procedures
+                  </td>
+                  <td>
+                    - Develop and enforce security policies and procedures.<br />
+                    - Conduct regular reviews and updates of security
+                    policies.<br />
+                    - Document and maintain incident response procedures.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Protect - Maintenance</td>
+                  <td>
+                    - Schedule and document regular maintenance activities for
+                    information systems.<br />
+                    - Ensure maintenance activities do not compromise security.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Protect - Protective Technology</td>
+                  <td>
+                    - Implement security technologies, such as firewalls,
+                    intrusion detection systems, and antivirus software.<br />
+                    - Regularly update and patch security technologies.<br />
+                    - Monitor the effectiveness of protective technologies.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Detect - Anomalies and Events</td>
+                  <td>
+                    - Develop and implement monitoring tools to detect
+                    anomalies.<br />
+                    - Establish processes to analyze and triage detected
+                    events.<br />
+                    - Document and respond to detected anomalies.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>Detect - Security Continuous Monitoring</td>
+                  <td>
+                    - Implement continuous monitoring of networks and
+                    systems.<br />
+                    - Regularly review monitoring data and respond to alerts.<br />
+                    - Ensure monitoring tools are updated and functioning
+                    correctly.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>Detect - Detection Processes</td>
+                  <td>
+                    - Develop and maintain detection processes.<br />
+                    - Test and update detection processes regularly.<br />
+                    - Document detection procedures and incident response steps.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>Respond - Response Planning</td>
+                  <td>
+                    - Develop and maintain an incident response plan.<br />
+                    - Ensure the incident response plan is tested and updated
+                    regularly.<br />
+                    - Assign roles and responsibilities for incident response.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>Respond - Communications</td>
+                  <td>
+                    - Establish communication protocols for incident
+                    response.<br />
+                    - Define roles and responsibilities for communication during
+                    incidents.<br />
+                    - Document communication procedures and ensure they are
+                    followed during incidents.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">18</th>
+                  <td>Respond - Analysis</td>
+                  <td>
+                    - Analyze detected incidents to understand their impact and
+                    scope.<br />
+                    - Document incident analysis and findings.<br />
+                    - Use findings to improve response strategies.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">19</th>
+                  <td>Respond - Mitigation</td>
+                  <td>
+                    - Implement measures to contain and mitigate the impact of
+                    incidents.<br />
+                    - Test mitigation measures to ensure effectiveness.<br />
+                    - Document mitigation procedures and outcomes.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">20</th>
+                  <td>Respond - Improvements</td>
+                  <td>
+                    - Conduct post-incident reviews to identify lessons
+                    learned.<br />
+                    - Update response plans and processes based on review
+                    findings.<br />
+                    - Implement improvements to prevent future incidents.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td>Recover - Recovery Planning</td>
+                  <td>
+                    - Develop and implement recovery plans for critical systems
+                    and data.<br />
+                    - Ensure recovery plans are tested and updated regularly.<br />
+                    - Document recovery procedures and responsibilities.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">22</th>
+                  <td>Recover - Communications</td>
+                  <td>
+                    - Communicate recovery activities and status to
+                    stakeholders.<br />
+                    - Ensure clear and timely communication during the recovery
+                    process.<br />
+                    - Document communication procedures and ensure they are
+                    followed during recovery.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Checklist for NIST 800-53</h2>
+          <div class="d-flex justify-content-center">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Step</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Additional Steps & Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Access Control (AC)</td>
+                  <td>
+                    - Implement identity and access management (IAM)
+                    solutions.<br />
+                    - Enforce least privilege access principles.<br />
+                    - Implement multi-factor authentication.<br />
+                    - Monitor and review access control mechanisms regularly.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Awareness and Training (AT)</td>
+                  <td>
+                    - Provide regular security awareness training to all
+                    employees.<br />
+                    - Maintain records of training sessions.<br />
+                    - Update training materials based on current threats and
+                    best practices.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Audit and Accountability (AU)</td>
+                  <td>
+                    - Implement logging and monitoring solutions.<br />
+                    - Regularly review and analyze audit logs.<br />
+                    - Ensure logs are protected from unauthorized access.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Configuration Management (CM)</td>
+                  <td>
+                    - Establish baseline configurations for all systems.<br />
+                    - Implement change management processes.<br />
+                    - Conduct regular configuration audits.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Contingency Planning (CP)</td>
+                  <td>
+                    - Develop disaster recovery and business continuity
+                    plans.<br />
+                    - Conduct regular testing of contingency plans.<br />
+                    - Ensure data backup and restore procedures are in place.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Identification and Authentication (IA)</td>
+                  <td>
+                    - Use multi-factor authentication for access to systems.<br />
+                    - Implement identity verification processes.<br />
+                    - Manage identification credentials securely.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Incident Response (IR)</td>
+                  <td>
+                    - Develop an incident response plan.<br />
+                    - Establish an incident response team.<br />
+                    - Conduct regular incident response training and drills.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Maintenance (MA)</td>
+                  <td>
+                    - Schedule regular maintenance activities for information
+                    systems.<br />
+                    - Document all maintenance actions.<br />
+                    - Ensure maintenance activities do not compromise security.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Media Protection (MP)</td>
+                  <td>
+                    - Implement encryption for sensitive data stored on
+                    media.<br />
+                    - Establish procedures for secure media disposal.<br />
+                    - Control access to media containing sensitive information.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Physical and Environmental Protection (PE)</td>
+                  <td>
+                    - Implement physical access controls to secure
+                    facilities.<br />
+                    - Monitor and log physical access to sensitive areas.<br />
+                    - Maintain environmental controls to protect hardware.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Planning (PL)</td>
+                  <td>
+                    - Develop security plans for all information systems.<br />
+                    - Regularly review and update security plans.<br />
+                    - Ensure plans address all identified risks and threats.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Personnel Security (PS)</td>
+                  <td>
+                    - Conduct background checks for employees with access to
+                    sensitive information.<br />
+                    - Implement procedures for managing personnel
+                    termination.<br />
+                    - Enforce security policies for personnel behavior.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Risk Assessment (RA)</td>
+                  <td>
+                    - Conduct regular risk assessments to identify potential
+                    threats.<br />
+                    - Document and prioritize risk findings.<br />
+                    - Develop mitigation strategies for identified risks.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>System and Services Acquisition (SA)</td>
+                  <td>
+                    - Define security requirements for new systems and
+                    services.<br />
+                    - Conduct security reviews of third-party services.<br />
+                    - Ensure procurement processes include security
+                    considerations.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>System and Communications Protection (SC)</td>
+                  <td>
+                    - Implement network security controls such as firewalls and
+                    intrusion detection systems.<br />
+                    - Use encryption for data in transit and at rest.<br />
+                    - Regularly update and patch security controls.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>System and Information Integrity (SI)</td>
+                  <td>
+                    - Implement patch management processes.<br />
+                    - Monitor systems for vulnerabilities and apply updates
+                    promptly.<br />
+                    - Use antivirus and anti-malware solutions.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

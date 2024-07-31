@@ -59,6 +59,10 @@ def NIST():
 def PCI_DSS_checklist():
     return render_template('/PCI_DSS/PCI_DSS_checklist.html')
 
+@app.route('/NIST_checklist')
+def NIST_checklist():
+    return render_template('/NIST/NIST_checklist.html')
+
 @app.route('/GRC_checklist')
 def GRC_checklist():
     return render_template('/GRC/GRC_checklist.html')
